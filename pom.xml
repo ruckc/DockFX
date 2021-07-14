@@ -11,12 +11,28 @@
     <url>https://github.com/RobertBColton/DockFX.git</url>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <netbeans.checkstyle.format>true</netbeans.checkstyle.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <fileExtensions>java, properties, xml</fileExtensions>
+        <jfx.version>12.0.1</jfx.version>
     </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${jfx.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${jfx.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

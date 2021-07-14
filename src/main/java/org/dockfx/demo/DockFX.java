@@ -21,9 +21,6 @@
 
 package org.dockfx.demo;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Random;
 
 import org.dockfx.DockNode;
@@ -33,6 +30,7 @@ import org.dockfx.DockPos;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Separator;
@@ -47,7 +45,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
-import javafx.scene.web.HTMLEditor;
 import javafx.stage.Stage;
 
 public class DockFX extends Application {
@@ -66,15 +63,10 @@ public class DockFX extends Application {
 
     // create a default test node for the center of the dock area
     TabPane tabs = new TabPane();
-    HTMLEditor htmlEditor = new HTMLEditor();
-    try {
-      htmlEditor.setHtmlText(new String(Files.readAllBytes(Paths.get("readme.html"))));
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
+    Label label = new Label("test node");
 
     // empty tabs ensure that dock node has its own background color when floating
-    tabs.getTabs().addAll(new Tab("Tab 1", htmlEditor), new Tab("Tab 2"), new Tab("Tab 3"));
+    tabs.getTabs().addAll(new Tab("Tab 1", label), new Tab("Tab 2"), new Tab("Tab 3"));
 
     TableView<String> tableView = new TableView<String>();
     // this is why @SupressWarnings is used above

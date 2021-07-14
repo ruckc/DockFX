@@ -1,15 +1,13 @@
-# DockFX
+# DockFX [![Build Status](https://goombert.visualstudio.com/DockFX/_apis/build/status/RobertBColton.DockFX?branchName=master)](https://goombert.visualstudio.com/DockFX/_build/latest?definitionId=1&branchName=master)
 <table>
 <tr>
-<th><img src="http://i.imgur.com/M69ZWgU.png" ></th>
-<th><img src="http://i.imgur.com/yPLbHwy.png" ></th>
+<th><img src="http://sites.psu.edu/robertbcolton/wp-content/uploads/sites/19608/2014/10/dockfxhover.png" ></th>
+<th><img src="http://sites.psu.edu/robertbcolton/wp-content/uploads/sites/19608/2014/10/dockfxdocked.png" ></th>
 </tr>
 </table>
 
 ## About
-This library was created to fill the void for docking frameworks available in the JavaFX RIA platform. Its intention is to provide you with a fully featured docking library. This project and its source code is licensed under the [GNU Lesser General Public License version 3](http://www.gnu.org/licenses/lgpl-3.0.en.html) and you should feel free to make adaptations of this work. Please see the included LICENSE file for further details.
-
-<img src="http://i.imgur.com/b2Oouif.png">
+This library was created to fill the void for docking frameworks available in the JavaFX RIA platform. Its intention is to provide you with a fully featured docking library. This project and its source code is licensed under the [Mozilla Public License version 2](https://www.mozilla.org/en-US/MPL/2.0/) and you should feel free to make adaptations of this work. Please see the included LICENSE file for further details.
 
 DockFX has a number of features:
 * Full documentation
@@ -31,4 +29,3 @@ The project was originally written in the Eclipse IDE but is also configured for
 
 ## Contributing
 Adaptations of the project are welcome but you are encouraged to send fixes upstream to the master repository. I use the [Google Java style conventions](https://github.com/google/styleguide) which you can download an Eclipse plugin for. After importing the Eclipse formatter you can use CTRL+SHIFT+F to run the formatter on your code. It is requested that commits sent to this repository follow these conventions. Please see the following [link](https://github.com/HPI-Information-Systems/Metanome/wiki/Installing-the-google-styleguide-settings-in-intellij-and-eclipse) for instructions on configuring the Google style conventions with the Eclipse or IntelliJ IDE.
-
